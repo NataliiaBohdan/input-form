@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../normalizecss/normalize.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section class="wrapper">
+
+        <form class="account-creation">
+            <h1>Create an Account</h1>
+            <div class="input-row"><label for="first-name">First Name<input class="input-name" type="text"
+                        id="first-name"></label>
+                <label for="last-name">Last Name<input class="input-surname" type="text" id="last-name"></label>
+            </div>
+            <div class="email">
+                <div class="input-row"><label for="email">Your Email<input class="input-email full" type="email"
+                            id="email"></label></div>
+                <p>We'll never share your email with anyone else.</p>
+            </div>
+
+            <div class="radio"><input class="radio-input" type="radio" id="male"><label class="label-male"
+                    for="male">Male</label>
+                <input class="radio-input" type="radio" id="female"><label class="label-female"
+                    for="female">Female</label>
+            </div>
+
+
+            <div class="input-row">
+                <div class="select-country"><label for="country">Country</label><select class="input-country"
+                        name="Country" id="country">
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="POland">Poland</option>
+                        <option value="Chech Republic">Chech Republic</option>
+                        <option value="Estonia">Estonia</option>
+                    </select></div>
+                <div class="city-wrapper"> <label class="label-city" for="city">City<input class="input-city"
+                            type="text" id="city"></label>
+                </div>
+            </div>
+            <button class="sign-button">Sign Up</button>
+            <p class="policy-note">By clicking the 'Sign Up' button, you confirm that you accept our<a href="#">Terms of
+                    Use</a>
+                and <a href="#">Privacy Policy</a>.</p>
+            <div class="account-login">
+                <h3>Have an account?</h3> <a href="#">Log In</a>
+            </div>
+        </form>
+        <form class="profile">
+            <h1>Profile</h1>
+            <div class="profile-photo"><img class="photo" src="images/📷 Image.png" alt="My Photo">
+                <div class="upload-delete">
+                    <div class="image-upload">
+                        <label for="file-input">
+                            <img class="image-file" src="images/Photo Camera.png" style="pointer-events: none" />
+                        </label>
+
+                        <input id="file-input" type="file" />
+                        <p>Up to 1 MB (300x300 px)</p>
+                    </div>
+
+                    <button class="delete-button"><img src="images/🔹 Icon Color.png" alt="Delete"></button>
+                </div>
+
+            </div>
+            <div class="input-row"><label for="name">Name<input class="input-name" type="text" id="name"></label>
+                <label for="email">E-mail<input class="input-email" type="email" id="email"></label>
+            </div>
+            <div class="input-row">
+                <div class="select-country"><label for="country">Country</label>
+                    <select class="input-country" name="Country" id="country">
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="POland">Poland</option>
+                        <option value="Chech Republic">Chech Republic</option>
+                        <option value="Estonia">Estonia</option>
+                    </select>
+                </div>
+                <div class="city-wrapper"> <label class="label-city" for="city">City<input class="input-city"
+                            type="text" id="city"></label></div>
+            </div>
+            <div class="input-row">
+                <label for="zip-code">Zip Code<input class="input-zip" type="text" id="zip-code"></label>
+                <label for="phone-number">Phone Number<input class="input-number" type="text" id="phone-number"></label>
+            </div>
+            <button class="button-update">Update</button>
+        </form>
+    </section>
+
+</body>
+
+</html>
